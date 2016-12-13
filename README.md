@@ -14,7 +14,7 @@ There are two endpoints, both of which are documented at the link above. Apiary 
 - The user can select an available start timeslot. Timeslots that are not possible are not selectable.
 - When the user has selected a timeslot, this is indicated visually.
 - The user can then confirm their booking. On confirmation, POST to the `/book/` endpoint defined in Apiary, submitting the relevant details of what has been selected.
-- Parse the servers response and show what has been booked.
+- Parse the server's response and show what has been booked.
 
 # Notes
 - We not looking for anything 'production ready'.
