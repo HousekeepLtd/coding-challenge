@@ -1,4 +1,26 @@
+### Housekeep Interview Stage 1: Coding
+As a way of assessing your approach to writing software, we'd like to read some of your code.
+
+You have the choice of either:
+
+- Submitting a project that you have previously completed
+- Taking the Housekeep coding challenge
+
+Both options are described below.
+
+
+## Submitting existing code
+If you have an existing project that you feel represents your abilities, we would love to see it. Here are a few pointers to help you select appropriately:
+- Python and/or Javascript are preferred, but we'll also consider other languages.
+- The ideal submission format is a version-controlled repository, e.g. a Github or Bitbucket repo.
+- If any part of the code is not your own work, you must indicate this clearly.
+- Include a note saying why you are proud of this code, what it does, and why it represents your abilities.
+- If a project is very large, point to the parts on which we should focus.
+
+
 ## Housekeep Front End Coding Challenge
+Write code to the following specifications.
+
 A customer wants to schedule a cleaning visit. Create a browser-based application that allows them to see times that are available during a given week, select one, and book in their visit.
 
 Use the mock API that we have set up using Apiary:
