@@ -41,7 +41,7 @@ There are two endpoints, both of which are documented at the link above. Apiary 
 ## Notes
 - We not looking for anything 'production ready'.
 - Spend no more than 3-4 hours on the task, and when you submit the work, describe why you made the choices you did, and what you could do to improve your solution
-- Use any frameworks which you're familiar with (we currently use Angular 1.5 at Housekeep)
+- Use any frameworks which you're familiar with (we currently use AngularJS, Angular 5, and Ionic at Housekeep)
 - Don't worry if you don't get through all the requirements - we mainly want to see the way that you approach problems
 - Please use source control (ideally github) and make regular commits to show your progress
 - Things that we look for in good code:
