@@ -6,11 +6,11 @@ You have the choice of either:
 - Submitting a project that you have previously completed
 - Taking the Housekeep coding challenge
 
-Both options are described below.
-
+The choice is entirely up to you, and what you feel best represents your abilities.
 
 # Submitting existing code
 If you have an existing project that you feel represents your abilities, we would love to see it. Here are a few pointers to help you select appropriately:
+
 - Python and/or Javascript/Typescript are preferred, but we'll also consider other languages.
 - The ideal submission format is a version-controlled repository, e.g. a Github or Bitbucket repo, but if you cannot share one of these a zipped archive is fine.
 - If any part of the code is not your own work, you must indicate this clearly.
