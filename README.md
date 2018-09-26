@@ -23,25 +23,47 @@ Write code to the following specifications.
 
 A customer wants to schedule a cleaning visit. Create a browser-based application that allows them to see times that are available during a given week, select one, and book in their visit.
 
-Use the mock API that we have set up using Apiary:
+## API specifications
 
-http://docs.housekeepavailability.apiary.io/#
+Create a service that simulates talking to a backend with two endpoints. It's up to you how you do this.
 
-There are two endpoints, both of which are documented at the link above. Apiary responds as if it were a real API, but it is not actually performing queries on real data, or writing to a database. It just returns a fixed JSON response to each possible request.
+**There is no need to build a backend service - you can simulate making requests and just have your methods return a fixed JSON response.**
+
+### Availability
+
+This "endpoint" should take a duration argument and return a representation of cleaning appointments that are available. Something like:
+
+```js
+  mockApiService.getAvailability(duration);
+```
+
+You can return the [sample response](availability.json) regardless of the duration supplied.
+
+### Booking
+
+This "endpoint" should receive the time slot that has been selected, and return a response to show the cleaner that has been booked. Something like:
+
+```js
+  mockApiService.book({
+    "day": "2018-06-08", "start": "19:00:00", "end": "22:00:00"
+  });
+```
+
+You can return the [sample response](booking.json) regardless of the arguments supplied.
 
 ## Requirements:
 - The user can specify the duration of the cleaning job that they want to book in hours
-- Availability data is requested via GET request to the `/availability/` endpoint defined in Apiary, (see above)
+- Availability data is requested via your mock service (see above)
 - The data returned describing available start times is displayed in a user-friendly interface. Consider a calendar-type view.
 - The user can select an available start timeslot. Timeslots that are not possible are not selectable.
 - When the user has selected a timeslot, this is indicated visually.
-- The user can then confirm their booking. On confirmation, POST to the `/book/` endpoint defined in Apiary, submitting the relevant details of what has been selected.
-- Parse the server's response and show what has been booked.
+- The user can then confirm their booking. On confirmation, simulate posting to the server using your mock service, submitting the relevant details of what has been selected.
+- Parse the response and show what has been booked.
 
 ## Notes
 - We not looking for anything 'production ready'.
 - Spend no more than 3-4 hours on the task, and when you submit the work, describe why you made the choices you did, and what you could do to improve your solution
-- Use any frameworks which you're familiar with (we currently use AngularJS, Angular 5, and Ionic at Housekeep)
+- Use any frameworks which you're familiar with (we currently use Angular 6 at Housekeep)
 - Don't worry if you don't get through all the requirements - we mainly want to see the way that you approach problems
 - Please use source control (ideally github) and make regular commits to show your progress
 - Things that we look for in good code:
